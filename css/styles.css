@@ -1,0 +1,164 @@
+/* Global Styles */
+p {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+h6 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* Main Div containg product picture and details div */
+.main {
+  height: 500px;
+  margin: 7% 15%;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Product Picture Section */
+.perfum-product-img {
+  border-radius: 8px 0 0 8px;
+  display: inline-block;
+  height: inherit;
+  position: absolute;
+  width: 50%;
+}
+
+.perfum-product-img-2 {
+  display: none;
+}
+
+/*Product Details Section*/
+.product-details {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 8px 8px 0;
+  display: inline-block;
+  height: inherit;
+  margin-left: 50%;
+  padding: 0 40px;
+  position: relative;
+}
+
+/* Price Tags */
+.new-price {
+  font-size: 1.6rem;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: line-through;
+  position: absolute;
+  margin-top: inherit;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Button */
+.btn {
+  background: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  padding: 15px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  background: hsl(158, 36%, 25%);
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(158, 36%, 37%);
+  text-decoration: none;
+}
+/* Responsive Web Design for Mobiles, Tablets and IPads */
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  .perfum-product-img-2 {
+    display: block;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: auto;
+  }
+
+  .perfum-product-img {
+    display: none;
+  }
+
+  .product-details {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 8px 8px;
+    height: auto;
+    padding: 20px 10px;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .main {
+    height: auto;
+    margin: 5% 3%;
+    border-radius: 8px;
+  }
+}
+
+/* Small devices (iPads, Tablets Between 481px and 768px ) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    margin: 5% 7%;
+  }
+
+  .product-details {
+    padding: 0 20px;
+  }
+
+  .btn {
+    padding: 10px 0;
+  }
+
+  .btn:hover {
+    padding: 10px 0;
+  }
+}
